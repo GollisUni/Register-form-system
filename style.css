@@ -1,0 +1,450 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap');
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap');
+ 
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+  .sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+  :root{
+    --bodybackground-color:#D9E1E3;
+    --poppins:"Poppins", sans-serif;;
+    --sedan:"Sedan", serif;
+    --Roboto: "Roboto", sans-serif;
+    --btncolor:#162aea;
+  }
+
+
+
+
+ body{
+    background-color: var(--bodybackground-color);
+ }
+
+ body{
+    background-image: url(./images/layer\ bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+ }
+
+
+ .topside img{
+    width: 80%;
+    position: absolute;
+    top:0;
+    right: 0;;
+    height:54px;
+     
+ }
+
+
+
+ .hold-bgwhite{
+    position: relative;
+    margin-top: 50px;
+    z-index:1;
+  
+    
+ }
+
+    .header-logo{
+   border-radius: 20px;
+     width: 90%;
+     margin: auto;
+     margin-top: 30px;
+     box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+     background-color: white;;
+     height: 120px;
+ }
+ 
+ 
+ .header-logo{
+    background-image: url(./images/logo\ bg\ white.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    mix-blend-mode: multiply;
+    
+ }
+/* 
+#mainlogo{
+    width:340px;
+    mix-blend-mode: multiply;
+}
+
+
+
+  @media screen and(max-width:500px) {
+#mainlogo{
+     width: 100px;
+}
+    
+  } */
+
+ .holdform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .form-card{
+    background-color: white;;
+    border-radius: 20px;
+    width: 450px;
+    box-shadow: 1px 2px 10px rgba(65, 64, 64, 0.3);
+    background-color: white;;
+margin: 100px 0px;
+height: 500px;
+ }
+
+
+
+ .form-card{
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+ }
+
+
+.username{
+    margin-bottom: 30px;
+}
+ .form-card h1{
+    font-family: var(--Roboto);
+    font-weight: 600;
+    font-size: 53px;
+ }
+
+ .form-card input{
+    width: 400px;
+    height: 60px;
+    background-color:var(--bodybackground-color);
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    border-radius: 20px;
+ }
+
+ .form-card input::placeholder{
+    color:black;
+ }
+
+ .form-card input::placeholder {
+    border-bottom: 1px solid grey;
+    padding-bottom: 6px;
+ }
+ .form-card .btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 20px;
+ }
+
+#submit{
+    background-color: var(--btncolor);
+    color:white;
+    width: 190px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: var(--Roboto);
+}
+
+ .btns span{
+    cursor: pointer;
+ }
+
+
+ .btns span a{
+    text-decoration: none;
+    color:black;
+    font-family: var(--Roboto);
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+ }
+ 
+
+ .btns span a:hover{
+    
+    color:var(--btncolor);
+  
+ }
+
+ #create{
+    background-color: black;
+    font-family: var(--Roboto);
+    font-size: 13px;
+    color:white;
+    border-radius: 20px;
+   padding: 10px 20px;
+ }
+
+
+
+.users{
+    float:inline-end;
+    margin: 30px 10px;
+}
+
+
+
+ .users i{
+    font-size: 30px;
+ }
+ 
+ .users{
+    background-color: #162aea;
+    border-radius: 35px;
+    color:white;
+    text-align: center;
+   padding: 5px 20px;
+ }
+
+ .users{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:6px;
+ }
+
+ /* .users select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+ } */
+
+ .users select{
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+ }
+ .users select:hover{
+    color:#162aea;
+ }
+
+ #submit:hover{
+   background-color: aliceblue;
+    color:black;
+ }
+
+
+
+
+ .header-logo{
+    position: relative;
+ }
+
+.users{
+    position: absolute;
+    right: 0;
+}
+ 
+
+#send{
+   font-family: var(--Roboto);
+   font-size: 17px;
+   text-transform: capitalize;
+   font-weight: 500;
+   border-radius: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Define styles for screens with a width of up to 480px (xx-small) */
+@media screen and (max-width: 480px) {
+   
+
+ .topside img{
+    width: 90%;
+    position: absolute;
+    top:0;
+    right: 0;;
+    height:34px; 
+ }
+
+
+ .header-logo{
+    border-radius: 20px;
+      width: 90%;
+      margin: auto;
+      margin-top: 30px;
+      box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+      background-color: white;;
+      height: 70px;
+  }
+   
+}
+
+
+
+
+
+#create:hover{
+   background-color: aliceblue;
+   color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Define styles for screens with a width between 481px and 600px (x-small) */
+@media screen and (min-width: 481px) and (max-width: 600px) {
+ 
+    .topside img{
+        width: 85%;
+        position: absolute;
+        top:0;
+        right: 0;;
+        height:34px;  
+     }
+
+     
+ .header-logo{
+    border-radius: 20px;
+      width: 90%;
+      margin: auto;
+      margin-top: -20px;
+      box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+      background-color: white;;
+      height: 70px;
+  }
+  .users{
+    background-color: #162aea;
+    border-radius: 35px;
+    color:white;
+    text-align: center;
+   padding: 10px 20px;
+   margin-top: 10px;
+   
+   width: 50px;
+   height: 50px;
+   
+ }
+  
+ .users i{
+  
+    font-size: 20px;
+    display: none;
+ }
+ .users select:hover {
+    display: block;
+     background-color: aliceblue;
+ }
+
+ .users select{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    align-items: center;
+ }
+ .users{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+
+ }
+
+ 
+
+ 
+}
+
+/* Define styles for screens with a width between 601px and 800px (small) */
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    
+  
+}
+
+/* Define styles for screens with a width between 801px and 1024px (medium) */
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  
+}
+
+/* Define styles for screens with a width between 1025px and 1200px (large) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  
+}
+
+/* Define styles for screens with a width between 1201px and 1600px (x-large) */
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  
+}
+
+/* Define styles for screens with a width greater than 1600px (xx-large) */
+@media screen and (min-width: 1601px) {
+  
+}
